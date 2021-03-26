@@ -1,0 +1,32 @@
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.event-row {
+    width: 2000px;
+    border-right: darkblue solid;
+    
+}
+
+.time {
+    border-right: black solid;
+    width: 5px;     
+}
+
+button {
+    background-color: cornflowerblue;
+    color: white;
+    float: right;
+    border: cornflowerblue solid 20px;;
+    width: max-content;
+    height: 75px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    margin-left: -12px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+    
+
+
