@@ -2,6 +2,11 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+:root {
+    margin: 25px;
+    margin-top: 0px;
+}
+
 .event-row {
     width: 2000px;
     border-right: darkblue solid;
