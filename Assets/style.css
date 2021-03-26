@@ -13,6 +13,9 @@
     
 }
 
+
+
+
 .time {
     border-right: black solid;
     width: 5px;     
@@ -33,5 +36,23 @@ button {
     
 }
     
+.navbar-header {
+    color: royalblue;
+    background-color: white;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 70px;
+    padding: 50px;
+    margin: 0px;
+    
+}
 
+.justify-content-center {
+    border-bottom: solid #444444 10px;
+    background-color: white;
+    
+}
 
+.p {
+    font-size: 25px;
+    font-weight: bolder;
+}
