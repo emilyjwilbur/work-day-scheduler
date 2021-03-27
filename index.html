@@ -1,122 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
-    <link rel='stylesheet' href="assets/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
     <title>Work Day Scheduler</title>
-</head>
-<body>
+  </head>
+  <body>
+    <nav class="navbar navbar-light flex-column justify-content-center">
+      <span class="navbar-header">Work Day Scheduler</span>
+      <span class="p">A simple calender app for scheduling your work day </span>
+      <span class="p" id="current-date-time"></span>
+    </nav>
 
-
-
-  <nav class="navbar navbar-light flex-column justify-content-center">
-    
-    <span class="navbar-header">Work Day Scheduler</span>
-    <span class="p">A simple calender app for scheduling your work day </span>
-    <span class="p" id="current-date-time"></span>
-  </nav>
-
-  <div class="container-fluid">
-    <div class="row">
+    <div class="container-fluid">
+      <div class="row">
         <main class="col-lg-12">
-            <table class="table">
-                <tbody>
+          <table class="table">
+            <tbody>
+              <tr>
+                <th class="time">9AM</th>
+                <td class="event-row">
+                  <input type="text" id="input9AM" />
+                </td>
+                <td>
+                  <button onclick="saveEvent('#input9AM');">Save</button>
+                </td>
+              </tr>
 
+              <tr>
+                <th class="time">10AM</th>
+                <td class="event-row">
+                  <input type="text" id="input10AM" />
+                </td>
 
-                  <tr>
-                    <th class="time">9AM</th>
-                    <td class="event-row">EVENT HERE</td>
-                    <td>
-                        <button type="button">SAVE</button>
-                    </td>
-                  </tr>
+                <td>
+                  <button onclick="saveEvent('#input10AM');">Save</button>
+                </td>
+              </tr>
 
+              <tr>
+                <th class="time">11AM</th>
+                <td class="event-row">
+                  <input type="text" id="input11AM" />
+                </td>
 
+                <td>
+                  <button onclick="saveEvent('#input11AM');">Save</button>
+                </td>
+              </tr>
 
-                  <tr>
-                    <th class="time">10AM</th>
-                    <td class="event-row">EVENT HERE</td>
-                    <td>
-                        <button type="button">SAVE</button>
-                    </td>
-                  </tr>
+              <tr>
+                <th class="time">12PM</th>
+                <td class="event-row">
+                  <input type="text" id="input12PM" />
+                </td>
 
-                  <tr>
-                    <th class="time">11AM</th>
-                    <td class="event-row">EVENT HERE</td>
-                    <td>
-                        <button type="button">SAVE</button>
-                    </td>
-                  </tr>
+                <td>
+                  <button onclick="saveEvent('#input12PM');">Save</button>
+                </td>
+              </tr>
 
-                  <tr>
-                    <th class="time">12PM</th>
-                    <td class="event-row">EVENT HERE</td>
-                    <td>
-                        <button type="button">SAVE</button>
-                    </td>
-                  </tr>
+              <tr>
+                <th class="time">1PM</th>
+                <td class="event-row">
+                  <input type="text" id="input1PM" />
+                </td>
 
-                  <tr>
-                    <th class="time">1PM</th>
-                    <td class="event-row">EVENT HERE</td>
-                    <td>
-                        <button type="button">SAVE</button>
-                    </td>
-                  </tr>
+                <td>
+                  <button onclick="saveEvent('#input1PM');">Save</button>
+                </td>
+              </tr>
 
-                  <tr>
-                    <th class="time">2PM</th>
-                    <td class="event-row">EVENT HERE</td>
-                    <td>
-                        <button type="button">SAVE</button>
-                    </td>
-                  </tr>
+              <tr>
+                <th class="time">2PM</th>
+                <td class="event-row">
+                  <input type="text" id="input2PM" />
+                </td>
 
-                  <tr>
-                    <th class="time">3PM</th>
-                    <td class="event-row">EVENT HERE</td>
-                    <td>
-                        <button type="button">SAVE</button>
-                    </td>
-                  </tr>
+                <td>
+                  <button onclick="saveEvent('#input2PM');">Save</button>
+                </td>
+              </tr>
 
-                  <tr>
-                    <th class="time">4PM</th>
-                    <td class="event-row">EVENT HERE</td>
-                    <td>
-                        <button type="button">SAVE</butto>
-                    </td>
-                  </tr>
+              <tr>
+                <th class="time">3PM</th>
+                <td class="event-row">
+                  <input type="text" id="input3PM" />
+                </td>
 
-                  <tr>
-                    <th class="time">5PM</th>
-                    <td class="event-row">EVENT HERE</td>
-                    <td>
-                        <button type="button">SAVE</button>
-                    </td>
-                  </tr>
+                <td>
+                  <button onclick="saveEvent('#input3PM');">Save</button>
+                </td>
+              </tr>
 
-                </tbody>
-              </table>
+              <tr>
+                <th class="time">4PM</th>
+                <td class="event-row">
+                  <input type="text" id="input4PM" />
+                </td>
+
+                <td>
+                  <button onclick="saveEvent('#input4PM');">Save</button>
+                </td>
+              </tr>
+
+              <tr>
+                <th class="time">5PM</th>
+                <td class="event-row">
+                  <input type="text" id="input5PM" />
+                </td>
+
+                <td>
+                  <button onclick="saveEvent('#input5PM');">Save</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </main>
+      </div>
     </div>
-</div>
 
-
-
-
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
     <script src="assets/script.js"></script>
-</body>
+  </body>
 </html>
