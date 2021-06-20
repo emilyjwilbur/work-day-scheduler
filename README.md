@@ -32,18 +32,12 @@ WHEN I refresh the page
 THEN the saved events persist
 ```
 
-## The Process
-
-- Rewatched class videos and referred to notes for set interval function and local storage
-- Google also helped a ton although I find myself finding a ton of different ways to do something. Adding onclick button event in html seemed a lot easier.
-- Went through class videos and googled for hours in effort to get the event rows to change color with time but I never did figure it out.
-- I'm finding JQuery quite challenging. 
 
 
 ![Screen Shot 2021-03-27 at 4 39 13 PM](https://user-images.githubusercontent.com/79462454/112734396-e1cb0600-8f1b-11eb-9e9a-5522e4d65cac.png)
 
 
-## Installation:
+
 
 The project was uploaded to GitHub at the following repository: https://github.com/emilyjwilbur/work-day-scheduler
 
